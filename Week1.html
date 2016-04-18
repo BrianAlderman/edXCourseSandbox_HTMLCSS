@@ -1,32 +1,65 @@
 <!doctype html>
-<html>
+<!--This document contains working notes from all weeks of the EDX HTML class -->
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Week 1 Test Document</title>
-  <!-- This is the W3 HTML Editor Link: https://validator.w3.org/nu/#file -->
+  <title>edX Introduction to HTML</title>
 </head>
 <body>
-  <h1> First Week Sandbox </h1>
-  <p> Hello World! </p>
-  <p>&lt;img src=&quot;images/test.png&quot;&gt;</p>
-  <p>To be, or not to be. That is the question <br> Whether tis nobler
-    in the mind to suffer the slings and arrows <br> of outrageous fortune</p>
-    <h2>This is an Ordered List</h2>
-    <p>
-      <ol>
-        <li>One!</li>
-        <li>Two!</li>
-        <li>Three!</li>
-      </ol>
-    </p>
-    <h2>This is an unordered list</h2>
-    <p>
-      <ul>
-        <li>One!</li>
-        <li>Two!</li>
-        <li>Three!</li>
-      </ul>
-    </p>
-    <em
+	<header title="Page Header">
+		<h1 id="pageTitle"> First Week Sandbox </h1>
+		<p>This is a sandbox site used during the EdX HTML5 Introductory Course</p>
+		<nav>
+			<a href="#courseNotes">Course Notes</a>
+			<a href="#referenceMaterial">Reference Material</a>
+		</nav>
+	</header>
+	<section id="courseNotes" title="Course Notes">
+		<h1 class="sectionTitle">This section contains practice material from the course content</h1>
+ 		<p> Hello World! </p>
+		<!-- the following is an example of using reserved characters-->
+ 		<p>&lt;img src=&quot;images/test.png&quot;&gt;</p>
+		<ul title="List of Reserved Characters">
+			<li>Less than (&lt;) is &amp;ls;</li>
+			<li>Greater than (&gt;) is &amp;gt;</li>
+			<li>Ampersand (&amp;) is &amp;amp;</li>
+			<li>Non Breaking Space (more than one space [i.e. &nbsp;&nbsp; w/o new line] is &amp;nbsp;</li>
+			<li>Quotes (&quot;) is &amp;quot;</li>
+		</ul>
+ 		<blockqote>To be, or not to be. That is the question <br><span id="shakespeareLine"><em> Whether tis nobler in the mind to suffer the slings and arrows </em></span><br> of outrageous fortune</blockquote>
+		<h2>Food Images</h2>
+		<img src="https://s-media-cache-ak0.pinimg.com/236x/6d/47/7a/6d477abbbcb12dd0531836cc6028a15c.jpg" alt="Banana Oat Pancakes" height=300>
+		<img src="ShiraziSalad.jpg" alt="Shirazi Salad" height=300>
+    	<article title="Lists Article">
+			<h2>This is an Ordered List</h2>
+		    	<ol id="orderedList" title="Activity List">
+			        <li>One!</li>
+			        <li>Two!</li>
+			        <li>Three!</li>
+		      	</ol>
+		    <h2>This is an unordered list</h2>
+		      	<ul id="unorderedList" title="Counting List">
+			        <li>One!</li>
+			        <li>Two!</li>
+			        <li>Three!</li>
+		      	</ul>
+		</article>
+		<figure>
+		</figure>
+	</section>
+	<aside title="Reference Material" id="referenceMaterial">
+		<h1 class="sectionTitle">Additional References Suggested by Course Material</h1>
+		<details>
+			<ul id="referencesList">
+			  	<li><a href="https://validator.w3.org/nu/#file" target="_blank"> W3 HTML Validator</a></li>
+			  	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" target="_blank">HTML Attribute Referene Documentation</a></li>
+			  	<li><a href="null" target="_blank">Purposly Broken Link</a></li>
+			</ul>
+		</details>
+	</aside>
+	<footer>
+		<p>Created by Brian Alderman, Spring 2016</p>
+		<a href="#pageTitle">Return to Top of Page</a>
+	</footer>
   </body>
   </html>
